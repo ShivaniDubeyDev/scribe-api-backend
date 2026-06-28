@@ -1,0 +1,60 @@
+# =========================================================================
+# SYSTEM BUILD ARTIFACTS
+# =========================================================================
+target/
+build/
+bin/
+HELP.md
+.mvn/wrapper/maven-wrapper.jar
+
+# Prevent deep target leakage across multi-module setups
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# =========================================================================
+# IDE & DEVELOPMENT TOOLS METADATA
+# =========================================================================
+### Eclipse / STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+*.code-workspace
+
+# =========================================================================
+# OPERATING SYSTEM SPECIFIC FILES
+# =========================================================================
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# =========================================================================
+# LOCAL RUNTIME MEDIA UPLOADS & ENVIRONMENT LOGS
+# =========================================================================
+# Target specific external upload paths instead of blocking whole source packages
+src/main/resources/static/uploads/
+*.log
